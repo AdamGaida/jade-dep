@@ -1,0 +1,57 @@
+<!--
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.tilab.jade</groupId>
+  <artifactId>jade-platform</artifactId>
+  <version>4.6.1</version>
+  <name>Java Agent DEvelopment platform (JADE)</name>
+  <description>JADE Platform v4.6.1 rev.6874</description>
+  
+  &lt;!&ndash; <author>E.Scaggliotti (JADE Team)</author> &ndash;&gt;
+  &lt;!&ndash; <date>martes, 11 de julio de 2023 14:59:35</date> &ndash;&gt;
+  &lt;!&ndash; <message>Retectored AgentMobilityService to permit overloading of fetchClassFile method</message> &ndash;&gt;
+  &lt;!&ndash; <objective>Deploy in containers and orchestrate with Swarm or Kubernetes, Multi-Agent Applications developed in Java with the JADE Platform (Rev. 2024-03-14)</objective> &ndash;&gt;
+
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+          <excludes>
+            <exclude>**/*.java</exclude>
+          </excludes>
+       </resource>
+    </resources>
+
+    <plugins>
+      <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-jar-plugin</artifactId>
+         <version>3.2.2</version>
+         <configuration>
+           <archive>
+              <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>
+           </archive>
+         </configuration>
+      </plugin>
+
+      <plugin>
+         <artifactId>maven-compiler-plugin</artifactId>
+         <version>3.12.1</version>
+         <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+         </configuration>
+      </plugin>
+    </plugins>
+    
+  </build>
+</project>
+-->
